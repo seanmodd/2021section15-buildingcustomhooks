@@ -5,6 +5,8 @@ import {
   useColorMode,
   VStack,
 } from '@chakra-ui/react';
+import BackwardCounter from '../components/BackwardCounter';
+import ForwardCounter from '../components/ForwardCounter';
 
 
 const Index = () => {
@@ -30,7 +32,10 @@ const Index = () => {
         >
           Section 15: Building Custom Hooks
         </Heading>
-        
+        <VStack>
+          <BackwardCounter />
+          <ForwardCounter />
+        </VStack>
       </VStack>
     </>
   );
